@@ -45,12 +45,10 @@ for (k in 1:length(kantonal_short_special) ) {
   #Simulation Gemeinden
   source("data_simulation_gegenvorschlag.R")
   
-  
-
-  results_gegenvorschlag <- results_gegenvorschlag[,c(4:6,11)]
+  results_gegenvorschlag <- results_gegenvorschlag[,c(3:6,11)]
   results_gegenvorschlag$neinStimmenInProzent <- 100-results_gegenvorschlag$jaStimmenInProzent
   
-  colnames(results_gegenvorschlag) <- c("Ja_Prozent_Gegenvorschlag","Ja_Absolut_Gegenvorschlag","Nein_Absolut_Gegenvorschlag",
+  colnames(results_gegenvorschlag) <- c("Gebiet_Ausgezaehlt_Gegenvorschlag","Ja_Prozent_Gegenvorschlag","Ja_Absolut_Gegenvorschlag","Nein_Absolut_Gegenvorschlag",
                                         "Gemeinde_Nr","Nein_Prozent_Gegenvorschlag")
   
   results <- merge(results,results_gegenvorschlag)
@@ -63,16 +61,21 @@ for (k in 1:length(kantonal_short_special) ) {
   #Simulation Gemeinden
   source("data_simulation_stichentscheid.R")
   
-  results_stichentscheid  <- results_stichentscheid[,c(4,11)]
+  results_stichentscheid  <- results_stichentscheid[,c(3:4,11)]
   results_stichentscheid$neinStimmenInProzent <- 100-results_stichentscheid$jaStimmenInProzent
   
-  colnames(results_stichentscheid) <- c("Stichentscheid_Zustimmung_Hauptvorlage","Gemeinde_Nr","Stichentscheid_Zustimmung_Gegenvorschlag")
+  colnames(results_stichentscheid) <- c("Gebiet_Ausgezaehlt_Stichentscheid","Stichentscheid_Zustimmung_Hauptvorlage","Gemeinde_Nr","Stichentscheid_Zustimmung_Gegenvorschlag")
   
   results <- merge(results,results_stichentscheid)
 
   #Ausgezählte Gemeinden auswählen
-  results_notavailable <- results[results$Gebiet_Ausgezaehlt == FALSE,]
-  results <- results[results$Gebiet_Ausgezaehlt == TRUE,]
+  results_notavailable <- results[results$Gebiet_Ausgezaehlt == FALSE |
+                                    results$Gebiet_Ausgezaehlt_Gegenvorschlag == FALSE |
+                                    results$Gebiet_Ausgezaehlt_Stichentscheid == FALSE,]
+  
+  results <- results[results$Gebiet_Ausgezaehlt == TRUE &
+                       results$Gebiet_Ausgezaehlt_Gegenvorschlag == TRUE &
+                       results$Gebiet_Ausgezaehlt_Stichentscheid == TRUE,]
   
   #Sind schon Daten vorhanden?
   if (nrow(results) > 0) {
@@ -118,8 +121,8 @@ for (k in 1:length(kantonal_short_special) ) {
 
   
   #Texte speichern
-  library(xlsx)
-  write.xlsx(results,paste0(kantonal_short_special[k],"_texte.xlsx"))
+  #library(xlsx)
+  #write.xlsx(results,paste0(kantonal_short_special[k],"_texte.xlsx"))
   
   ###Output generieren für Datawrapper
   output_dw <- get_output_gemeinden(results)
@@ -129,6 +132,3 @@ for (k in 1:length(kantonal_short_special) ) {
   cat(paste0("\nGenerated output for Vorlage ",kantonal_short_special[k],"\n"))
   
 }
-
-
-View(output_dw)
