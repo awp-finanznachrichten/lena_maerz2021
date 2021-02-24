@@ -6,6 +6,7 @@ for (k in 1:length(kantonal_short_special) ) {
                                   kantonal_number_special[k],
                                   kantonal_add_special[k])
 
+
   #Simulation Gemeinden
   source("data_simulation_gemeinden.R")
  
@@ -13,8 +14,8 @@ for (k in 1:length(kantonal_short_special) ) {
   #Daten anpassen Gemeinden
   results <- treat_gemeinden(results)
   results <- format_data_g(results)
-  
-  
+ 
+
   #Wie viele Gemeinden sind ausgezählt?
   cat(paste0(sum(results$Gebiet_Ausgezaehlt)," Gemeinden sind ausgezählt.\n"))
   
@@ -41,8 +42,6 @@ for (k in 1:length(kantonal_short_special) ) {
                                                  kantonal_number_special[k],
                                                  kantonal_add_special[k]+1)
   
-  
-
   #Simulation Gemeinden
   source("data_simulation_gegenvorschlag.R")
   
@@ -56,7 +55,6 @@ for (k in 1:length(kantonal_short_special) ) {
   
   results <- merge(results,results_gegenvorschlag)
   
-
   #Stichentscheid hinzufügen
   results_stichentscheid <- get_results_kantonal(json_data_kantone,
                                                  kantonal_number_special[k],
@@ -75,8 +73,6 @@ for (k in 1:length(kantonal_short_special) ) {
   #Ausgezählte Gemeinden auswählen
   results_notavailable <- results[results$Gebiet_Ausgezaehlt == FALSE,]
   results <- results[results$Gebiet_Ausgezaehlt == TRUE,]
-  
-
   
   #Sind schon Daten vorhanden?
   if (nrow(results) > 0) {
@@ -135,3 +131,4 @@ for (k in 1:length(kantonal_short_special) ) {
 }
 
 
+View(output_dw)

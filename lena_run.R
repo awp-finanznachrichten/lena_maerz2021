@@ -29,10 +29,6 @@ source("kantonale_abstimmungen.R", encoding="UTF-8")
 ###Kantonale Abstimmungen Sonderfälle###
 source("kantonale_abstimmungen_special.R", encoding="UTF-8")
 
-#Wie lange hat LENA gebraucht
-time_end <- Sys.time()
-cat(time_end-time_start)
-
 #Make Commit
 git2r::config(user.name = "awp-finanznachrichten",user.email = "sw@awp.ch")
 gitadd()
@@ -50,5 +46,9 @@ gitcommit()
 gitpush()
 
 cat("Daten erfolgreich auf Github hochgeladen\n")
+
+#Wie lange hat LENA gebraucht
+time_end <- Sys.time()
+cat(time_end-time_start)
 
 #}
