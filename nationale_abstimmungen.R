@@ -6,9 +6,10 @@ for (i in 1:length(vorlagen_short)) {
   ###Nationale Resultate aus JSON auslesen
   results_national <- get_results(json_data,i,level="national")
 
+  
   ###Resultate aus JSON auslesen für Gemeinden
   results <- get_results(json_data,i)
-  
+
 #Simulation Gemeinden
 source("data_simulation_gemeinden.R")
   

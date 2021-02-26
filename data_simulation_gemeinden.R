@@ -1,3 +1,5 @@
+set.seed(i)
+
 #Daten simulieren Gemeinde!!!
 for (a in 1:nrow(results)) { 
 
