@@ -171,7 +171,6 @@ source("data_simulation_gemeinden.R")
   
   ###Output generieren für Datawrapper Radiotop
   
-  #Output Abstimmungen Gemeinde
   output_dw_radiotop <- results[results$Kanton_Short == "ZH" |
                                   results$Kanton_Short == "SH" |
                                   results$Kanton_Short == "TG" |
@@ -181,8 +180,37 @@ source("data_simulation_gemeinden.R")
   
   output_dw_radiotop <- get_output_gemeinden(output_dw_radiotop)
   
-  #Output speichern
   write.csv(output_dw_radiotop,paste0("Output/",vorlagen_short[i],"_dw_radiotop.csv"), na = "", row.names = FALSE, fileEncoding = "UTF-8")
+  
+  ###Output generieren für Datawrapper Schwyz Gebiete
+  
+  #Hoefe
+  output_dw_hoefe_SZ <- results[results$Gemeinde_Nr == 1323|
+                                  results$Gemeinde_Nr == 1322 |
+                                  results$Gemeinde_Nr == 1321,]
+  
+  output_dw_hoefe_SZ <- get_output_gemeinden(output_dw_hoefe_SZ)
+  
+  #March
+  output_dw_march_SZ <- results[results$Gemeinde_Nr > 1340 &
+                                  results$Gemeinde_Nr < 1350 ,]
+  
+  output_dw_march_SZ <- get_output_gemeinden(output_dw_march_SZ)
+
+  #Output speichern
+  write.csv(output_dw_hoefe_SZ,paste0("Output/",vorlagen_short[i],"_hoefe_SZ.csv"), na = "", row.names = FALSE, fileEncoding = "UTF-8")
+  write.csv(output_dw_march_SZ,paste0("Output/",vorlagen_short[i],"_march_SZ.csv"), na = "", row.names = FALSE, fileEncoding = "UTF-8")
+  
+  
+  ###Output generieren für Datawrapper Sarganserland
+  
+  #Hoefe
+  output_dw_sarganserland_SG <- results[results$Gemeinde_Nr > 3290 &
+                                          results$Gemeinde_Nr < 3300 ,]
+  
+  output_dw_sarganserland_SG <- get_output_gemeinden(output_dw_sarganserland_SG)
+  
+  write.csv(output_dw_sarganserland_SG,paste0("Output/",vorlagen_short[i],"_sarganserland_SG.csv"), na = "", row.names = FALSE, fileEncoding = "UTF-8")
   
   
   #Output Abstimmungen Kantone
