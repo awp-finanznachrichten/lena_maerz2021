@@ -1,7 +1,7 @@
 set.seed(i)
 
-#Daten simulieren Gemeinde!!!
-for (a in seq(1,nrow(results),2)) {   #1:nrow(results)
+#Daten simulieren Gemeinde!!! 
+for (a in 1:nrow(results)) {   #seq(1,nrow(results),2)
 
 results$gebietAusgezaehlt[a] = TRUE
 

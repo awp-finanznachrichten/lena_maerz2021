@@ -1,27 +1,27 @@
 "Kantons_Nr","Kanton_d","Kanton_f","Kanton_i","Ja_Stimmen_In_Prozent_Kanton","Nein_Stimmen_In_Prozent_Kanton","Kanton_color","Gemeinden_overall","Gemeinden_counted","Legende"
-1,"Zürich","Zurich","Zurigo",68.2,31.8,100,162,81,"81/162"
-2,"Bern","Berne","Berna",48.5,51.5,0,334,167,"167/334"
-3,"Luzern","Lucerne","Lucerna",23.5,76.5,0,80,40,"40/80"
-4,"Uri","Uri","Uri",88.1,11.9,100,19,10,"10/19"
-5,"Schwyz","Schwyz","Svitto",11.4,88.6,0,30,15,"15/30"
-6,"Obwalden","Obwald","Obvaldo",94.9,5.1,100,7,4,"4/7"
-7,"Nidwalden","Nidwald","Nidvaldo",16.4,83.6,0,11,5,"5/11"
-8,"Glarus","Glaris","Glarona",80.3,19.7,100,3,2,"2/3"
-9,"Zug","Zoug","Zugo",91.4,8.6,100,11,5,"5/11"
-10,"Freiburg","Fribourg","Friburgo",5.6,94.4,0,128,64,"64/128"
-11,"Solothurn","Soleure","Soletta",7.4,92.6,0,107,53,"53/107"
-12,"Basel-Stadt","Bâle-Ville","Basilea Città",0.8,99.2,0,3,2,"2/3"
-13,"Basel-Landschaft","Bâle-Campagne","Basilea Campagna",81.8,18.2,100,86,43,"43/86"
-14,"Schaffhausen","Schaffhouse","Sciaffusa",50.3,49.7,100,26,13,"13/26"
-15,"Appenzell Ausserrhoden","Appenzell Rhodes-Extérieures","Appenzello Esterno",24.5,75.5,0,20,10,"10/20"
-16,"Appenzell Innerrhoden","Appenzell Rhodes-Intérieures","Appenzello Interno",32.5,67.5,0,6,3,"3/6"
-17,"St. Gallen","Saint-Gall","San Gallo",60.7,39.3,100,77,38,"38/77"
-18,"Graubünden","Grisons","Grigioni",96.1,3.9,100,101,50,"50/101"
-19,"Aargau","Argovie","Argovia",55.3,44.7,100,210,105,"105/210"
-20,"Thurgau","Thurgovie","Turgovia",93.7,6.3,100,80,40,"40/80"
-21,"Tessin","Tessin","Ticino",87.3,12.7,100,111,56,"56/111"
-22,"Waadt","Vaud","Vaud",56.6,43.4,100,308,154,"154/308"
-23,"Wallis","Valais","Vallese",21.1,78.9,0,122,61,"61/122"
-24,"Neuenburg","Neuchâtel","Neuchâtel",0.2,99.8,0,27,13,"13/27"
-25,"Genf","Genève","Ginevra",8.3,91.7,0,45,23,"23/45"
-26,"Jura","Jura","Giura",1.2,98.8,0,53,27,"27/53"
+1,"Zürich","Zurich","Zurigo",90.6,9.4,90.6,162,162,
+2,"Bern","Berne","Berna",92.4,7.6,92.4,334,334,
+3,"Luzern","Lucerne","Lucerna",90.4,9.6,90.4,80,80,
+4,"Uri","Uri","Uri",70.1,29.9,70.1,19,19,
+5,"Schwyz","Schwyz","Svitto",38.5,61.5,38.5,30,30,
+6,"Obwalden","Obwald","Obvaldo",42.3,57.7,42.3,7,7,
+7,"Nidwalden","Nidwald","Nidvaldo",78.2,21.8,78.2,11,11,
+8,"Glarus","Glaris","Glarona",92.1,7.9,92.1,3,3,
+9,"Zug","Zoug","Zugo",7.6,92.4,7.6,11,11,
+10,"Freiburg","Fribourg","Friburgo",15.8,84.2,15.8,128,128,
+11,"Solothurn","Soleure","Soletta",47.2,52.8,47.2,107,107,
+12,"Basel-Stadt","Bâle-Ville","Basilea Città",73.8,26.2,73.8,3,3,
+13,"Basel-Landschaft","Bâle-Campagne","Basilea Campagna",92.6,7.4,92.6,86,86,
+14,"Schaffhausen","Schaffhouse","Sciaffusa",68.2,31.8,68.2,26,26,
+15,"Appenzell Ausserrhoden","Appenzell Rhodes-Extérieures","Appenzello Esterno",83.8,16.2,83.8,20,20,
+16,"Appenzell Innerrhoden","Appenzell Rhodes-Intérieures","Appenzello Interno",14.7,85.3,14.7,6,6,
+17,"St. Gallen","Saint-Gall","San Gallo",58.2,41.8,58.2,77,77,
+18,"Graubünden","Grisons","Grigioni",17.2,82.8,17.2,101,101,
+19,"Aargau","Argovie","Argovia",57.8,42.2,57.8,210,210,
+20,"Thurgau","Thurgovie","Turgovia",68.5,31.5,68.5,80,80,
+21,"Tessin","Tessin","Ticino",12.7,87.3,12.7,111,111,
+22,"Waadt","Vaud","Vaud",63.4,36.6,63.4,308,308,
+23,"Wallis","Valais","Vallese",73.7,26.3,73.7,122,122,
+24,"Neuenburg","Neuchâtel","Neuchâtel",93.6,6.4,93.6,27,27,
+25,"Genf","Genève","Ginevra",83.1,16.9,83.1,45,45,
+26,"Jura","Jura","Giura",47.3,52.7,47.3,53,53,
