@@ -11,7 +11,7 @@ for (i in 1:length(vorlagen_short)) {
   results <- get_results(json_data,i)
 
 #Simulation Gemeinden
-source("data_simulation_gemeinden.R")
+#source("data_simulation_gemeinden.R")
   
 
   #Emergency adapt
@@ -28,7 +28,7 @@ source("data_simulation_gemeinden.R")
   results_kantone <- get_results(json_data,i,"cantonal")
   
   #Simulation Kantone
-  source("data_simulation_kantone.R")
+  #source("data_simulation_kantone.R")
   
   json_data$schweiz$vorlagen$kantone
   Ja_Stimmen_Kanton <- results_kantone %>%
@@ -243,7 +243,7 @@ source("data_simulation_gemeinden.R")
                             round(results_national$jaStimmenInProzent,1)," %</b> sì, <b>",
                             round(100-results_national$jaStimmenInProzent,1)," %</b> no")
     
-    
+  }   
     #Karten Gemeinden
     dw_edit_chart(datawrapper_codes[i,2],intro=undertitel_de,annotate=paste0("Letzte Aktualisierung: ",format(Sys.time(),"%d.%m.%Y %H:%M Uhr")))
     dw_publish_chart(datawrapper_codes[i,2])
@@ -264,7 +264,7 @@ source("data_simulation_gemeinden.R")
     dw_edit_chart(datawrapper_codes[i,7],intro=undertitel_it,annotate=paste0("Ultimo aggiornamento: ",format(Sys.time(),"%d.%m.%Y %H:%M Uhr")))
     dw_publish_chart(datawrapper_codes[i,7])
     
-  }
+ # }
   
   
 
