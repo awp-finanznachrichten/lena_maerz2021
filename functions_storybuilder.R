@@ -110,12 +110,12 @@ excuse_my_french <- function(dta) {
   dta$Text_f[i] <- str_replace_all(dta$Text_f[i],"de U","d'U")
   dta$Text_f[i] <- str_replace_all(dta$Text_f[i],"de Yv","d'Yv")
   
-  dta$Text_f[i] <- str_replace_all(dta$Text_f[i],"de Les","des")
-  dta$Text_f[i] <- str_replace_all(dta$Text_f[i],"de Le","du")
-  dta$Text_f[i] <- str_replace_all(dta$Text_f[i],"à Les","aux")
-  dta$Text_f[i] <- str_replace_all(dta$Text_f[i],"A Les","Aux")
-  dta$Text_f[i] <- str_replace_all(dta$Text_f[i],"à Le","au")
-  dta$Text_f[i] <- str_replace_all(dta$Text_f[i],"A Le","Au")
+  dta$Text_f[i] <- str_replace_all(dta$Text_f[i],"de Les ","des ")
+  dta$Text_f[i] <- str_replace_all(dta$Text_f[i],"de Le ","du ")
+  dta$Text_f[i] <- str_replace_all(dta$Text_f[i],"à Les ","aux ")
+  dta$Text_f[i] <- str_replace_all(dta$Text_f[i],"A Les ","Aux ")
+  dta$Text_f[i] <- str_replace_all(dta$Text_f[i],"à Le ","au ")
+  dta$Text_f[i] <- str_replace_all(dta$Text_f[i],"A Le ","Au ")
   dta$Text_f[i] <- str_replace_all(dta$Text_f[i],"du Vaud","de Le Vaud")
   
   dta$Text_f[i] <- str_replace_all(dta$Text_f[i],"de Henniez","d'Henniez")
