@@ -31,7 +31,7 @@ for (k in 1:length(kantonal_short_special) ) {
            Highest_Yes_Kant = FALSE,
            Highest_No_Kant = FALSE,
            Storyboard = NA,
-           Text_d = "Die Resultate von dieser Gemeinde sind noch nicht bekannt.",
+           Text_d = "Die Resultate dieser Gemeinde sind noch nicht bekannt.",
            Text_f = "Les résultats ne sont pas encore connus dans cette commune.",
            Text_i = "I resultati di questa comune non sono ancora noti.")
   

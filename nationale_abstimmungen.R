@@ -52,7 +52,7 @@ for (i in 1:length(vorlagen_short)) {
            Einstimmig_Nein = NA,
            kleine_Gemeinde = NA,
            Storyboard = NA,
-           Text_d = "Die Resultate von dieser Gemeinde sind noch nicht bekannt.",
+           Text_d = "Die Resultate dieser Gemeinde sind noch nicht bekannt.",
            Text_f = "Les résultats ne sont pas encore connus dans cette commune.",
            Text_i = "I resultati di questa comune non sono ancora noti.")
   
@@ -243,7 +243,7 @@ for (i in 1:length(vorlagen_short)) {
                             round(results_national$jaStimmenInProzent,1)," %</b> sì, <b>",
                             round(100-results_national$jaStimmenInProzent,1)," %</b> no")
     
-  #}   
+  }   
     #Karten Gemeinden
     dw_edit_chart(datawrapper_codes[i,2],intro=undertitel_de,annotate=paste0("Letzte Aktualisierung: ",format(Sys.time(),"%d.%m.%Y %H:%M Uhr")))
     dw_publish_chart(datawrapper_codes[i,2])
@@ -264,7 +264,6 @@ for (i in 1:length(vorlagen_short)) {
     dw_edit_chart(datawrapper_codes[i,7],intro=undertitel_it,annotate=paste0("Ultimo aggiornamento: ",format(Sys.time(),"%d.%m.%Y %H:%M Uhr")))
     dw_publish_chart(datawrapper_codes[i,7])
     
-  }
   
   
 
