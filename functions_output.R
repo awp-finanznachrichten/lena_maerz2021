@@ -55,7 +55,7 @@ for (y in 1:nrow(output_dw_kantone)) {
     output_dw_kantone$Kanton_color[y] <- output_dw_kantone$Ja_Stimmen_In_Prozent_Kanton[y]
     
     #Log-Entry
-    cat(paste0(Sys.time(),": Kanton ",output_dw_kantone$Kanton_d[y]," komplett (",vorlagen_short[i],")\n"),file="Output/log_file.txt",append = TRUE)
+    cat(paste0(output_dw_kantone$Kanton_d[y],", "),file="Output/log_file.txt",append = TRUE)
 
   }  
   

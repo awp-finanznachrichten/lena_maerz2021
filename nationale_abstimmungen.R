@@ -229,7 +229,7 @@ for (i in 1:length(vorlagen_short)) {
   undertitel_fr <- "Aucun résultat n'est encore connu."
   undertitel_it <- "Nessun risultato è ancora noto."
   
-  if (sum(results$Gebiet_Ausgezaehlt) > 10000 ) {
+  if (sum(results$Gebiet_Ausgezaehlt) > 0 ) {
     
     undertitel_de <- paste0("Es sind <b>",sum(results$Gebiet_Ausgezaehlt),"</b> von <b>",nrow(results),
                             "</b> Gemeinden ausgezählt. Stand: <b>",
@@ -246,7 +246,7 @@ for (i in 1:length(vorlagen_short)) {
                             round(results_national$jaStimmenInProzent,1)," %</b> sì, <b>",
                             round(100-results_national$jaStimmenInProzent,1)," %</b> no")
   
-      
+  }       
  
     #Karten Gemeinden
     dw_edit_chart(datawrapper_codes[i,2],intro=undertitel_de,annotate=paste0("Letzte Aktualisierung: ",format(Sys.time(),"%d.%m.%Y %H:%M Uhr")))
@@ -268,5 +268,5 @@ for (i in 1:length(vorlagen_short)) {
     dw_edit_chart(datawrapper_codes[i,7],intro=undertitel_it,annotate=paste0("Ultimo aggiornamento: ",format(Sys.time(),"%d.%m.%Y %H:%M Uhr")))
     dw_publish_chart(datawrapper_codes[i,7])
 
-} 
+
 }
