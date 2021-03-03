@@ -11,7 +11,7 @@ for (i in 1:length(vorlagen_short)) {
   results <- get_results(json_data,i)
 
 #Simulation Gemeinden
-source("data_simulation_gemeinden.R")
+#source("data_simulation_gemeinden.R")
   
 
   #Emergency adapt
@@ -28,7 +28,7 @@ source("data_simulation_gemeinden.R")
   results_kantone <- get_results(json_data,i,"cantonal")
   
   #Simulation Kantone
-  source("data_simulation_kantone.R")
+  #source("data_simulation_kantone.R")
   
   json_data$schweiz$vorlagen$kantone
   Ja_Stimmen_Kanton <- results_kantone %>%
@@ -68,7 +68,6 @@ source("data_simulation_gemeinden.R")
     #Daten anpassen
     results <- augment_raw_data(results)
     
-    results$kleine_Gemeinde <- TRUE
     #Intros generieren
     results <- normal_intro(results)
     
@@ -150,8 +149,8 @@ source("data_simulation_gemeinden.R")
   
 
   #Texte speichern
-  library(xlsx)
-  write.xlsx(results,paste0(vorlagen_short[i],"_texte.xlsx"),row.names = FALSE)
+  #library(xlsx)
+  #write.xlsx(results,paste0(vorlagen_short[i],"_texte.xlsx"),row.names = FALSE)
   
   ###Output generieren für Datawrapper
   
@@ -227,7 +226,7 @@ source("data_simulation_gemeinden.R")
   undertitel_fr <- "Aucun résultat n'est encore connu."
   undertitel_it <- "Nessun risultato è ancora noto."
   
-  if (sum(results$Gebiet_Ausgezaehlt) > 100 ) {
+  if (sum(results$Gebiet_Ausgezaehlt) > 0 ) {
     
     undertitel_de <- paste0("Es sind <b>",sum(results$Gebiet_Ausgezaehlt),"</b> von <b>",nrow(results),
                             "</b> Gemeinden ausgezählt. Stand: <b>",
@@ -243,7 +242,8 @@ source("data_simulation_gemeinden.R")
                             "</b> communi sono noti. Stato: <b>",
                             round(results_national$jaStimmenInProzent,1)," %</b> sì, <b>",
                             round(100-results_national$jaStimmenInProzent,1)," %</b> no")
-    
+  
+    }   
  
     #Karten Gemeinden
     dw_edit_chart(datawrapper_codes[i,2],intro=undertitel_de,annotate=paste0("Letzte Aktualisierung: ",format(Sys.time(),"%d.%m.%Y %H:%M Uhr")))
@@ -264,9 +264,6 @@ source("data_simulation_gemeinden.R")
     
     dw_edit_chart(datawrapper_codes[i,7],intro=undertitel_it,annotate=paste0("Ultimo aggiornamento: ",format(Sys.time(),"%d.%m.%Y %H:%M Uhr")))
     dw_publish_chart(datawrapper_codes[i,7])
-    
-  
-  }  
 
   
 }
