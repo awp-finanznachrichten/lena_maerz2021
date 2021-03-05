@@ -6,7 +6,6 @@ for (k in 1:length(kantonal_short_special) ) {
                                   kantonal_number_special[k],
                                   kantonal_add_special[k])
 
-
   #Simulation Gemeinden
   #source("data_simulation_gemeinden.R")
  

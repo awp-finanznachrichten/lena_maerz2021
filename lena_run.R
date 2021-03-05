@@ -10,6 +10,7 @@ source("functions_storyfinder.R", encoding = "UTF-8")
 source("functions_storybuilder.R", encoding = "UTF-8")
 source("functions_output.R", encoding = "UTF-8")
 
+
 #Anzahl, Name und Nummer der Vorlagen von JSON einlesen
 vorlagen <- get_vorlagen(json_data,"de")
 
@@ -53,3 +54,5 @@ time_end <- Sys.time()
 cat(time_end-time_start)
 
 #}
+
+View(results)
