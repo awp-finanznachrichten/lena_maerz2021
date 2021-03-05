@@ -54,5 +54,3 @@ time_end <- Sys.time()
 cat(time_end-time_start)
 
 #}
-
-View(results)
