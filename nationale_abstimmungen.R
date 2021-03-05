@@ -30,7 +30,6 @@ for (i in 1:length(vorlagen_short)) {
   #Simulation Kantone
   #source("data_simulation_kantone.R")
   
-  json_data$schweiz$vorlagen$kantone
   Ja_Stimmen_Kanton <- results_kantone %>%
     select(Kantons_Nr,jaStimmenInProzent) %>%
     rename(Ja_Stimmen_In_Prozent_Kanton = jaStimmenInProzent) %>%
