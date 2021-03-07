@@ -1,6 +1,11 @@
 #Working Directory definieren
 setwd("C:/Users/simon/OneDrive/LENA_Project/lena_maerz2021")
 
+###LENA alle 5 Sekunden laufen lassen
+repeat{
+
+Sys.sleep(5)
+
 ###Config: Bibliotheken laden, Pfade/Links definieren, bereits vorhandene Daten laden
 source("config.R",encoding = "UTF-8")
 
@@ -14,10 +19,7 @@ source("functions_output.R", encoding = "UTF-8")
 #Anzahl, Name und Nummer der Vorlagen von JSON einlesen
 vorlagen <- get_vorlagen(json_data,"de")
 
-###LENA alle 5 Sekunden laufen lassen
-#repeat{
 
-#Sys.sleep(5)
 
 time_start <- Sys.time()
 
@@ -53,4 +55,4 @@ cat("Daten erfolgreich auf Github hochgeladen\n")
 time_end <- Sys.time()
 cat(time_end-time_start)
 
-#}
+}
