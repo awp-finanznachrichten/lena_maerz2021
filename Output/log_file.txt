@@ -485,3 +485,12 @@ Luzern, Uri, Schwyz, Obwalden, Nidwalden, Glarus, Basel-Stadt, Basel-Landschaft,
 
 2021-03-07 14:09:55 Indonesien
 Luzern, Uri, Schwyz, Obwalden, Nidwalden, Glarus, Basel-Stadt, Basel-Landschaft, Schaffhausen, Appenzell Ausserrhoden, St. Gallen, Graubünden, Aargau, Thurgau, Tessin, 
+
+2021-03-07 14:11:42 Verhuellungsverbot
+Luzern, Uri, Schwyz, Obwalden, Nidwalden, Glarus, Basel-Stadt, Basel-Landschaft, Schaffhausen, Appenzell Ausserrhoden, St. Gallen, Graubünden, Aargau, Thurgau, Tessin, 
+
+2021-03-07 14:12:10 E-ID-Gesetz
+Luzern, Uri, Schwyz, Obwalden, Nidwalden, Glarus, Basel-Stadt, Basel-Landschaft, Schaffhausen, Appenzell Ausserrhoden, St. Gallen, Graubünden, Aargau, Thurgau, Tessin, 
+
+2021-03-07 14:12:37 Indonesien
+Luzern, Uri, Schwyz, Obwalden, Nidwalden, Glarus, Basel-Stadt, Basel-Landschaft, Schaffhausen, Appenzell Ausserrhoden, St. Gallen, Graubünden, Aargau, Thurgau, Tessin, 
