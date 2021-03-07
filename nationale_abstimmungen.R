@@ -9,6 +9,7 @@ for (i in 1:length(vorlagen_short)) {
   
   ###Resultate aus JSON auslesen für Gemeinden
   results <- get_results(json_data,i)
+  
 
 #Simulation Gemeinden
 #source("data_simulation_gemeinden.R")
