@@ -233,3 +233,12 @@ Glarus, Basel-Stadt, Graubünden,
 
 2021-03-07 12:58:59 Indonesien
 Glarus, Basel-Stadt, Graubünden, 
+
+2021-03-07 13:03:17 Verhuellungsverbot
+Glarus, Basel-Stadt, Graubünden, Aargau, 
+
+2021-03-07 13:03:39 E-ID-Gesetz
+Glarus, Basel-Stadt, Graubünden, Aargau, 
+
+2021-03-07 13:04:01 Indonesien
+Glarus, Basel-Stadt, Graubünden, Aargau, 
