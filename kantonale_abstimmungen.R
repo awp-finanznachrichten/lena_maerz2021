@@ -61,7 +61,7 @@ for (k in 1:length(kantonal_short) ) {
     
     if (json_data_kantone$kantone$vorlagen[[kantonal_number[k]]]$vorlageBeendet[[kantonal_add[k]]] == TRUE) {
     
-    results <- kanton_storyfinder_kantonal(results)
+    #results <- kanton_storyfinder_kantonal(results)
     
     }
     

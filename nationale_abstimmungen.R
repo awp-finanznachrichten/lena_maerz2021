@@ -71,11 +71,11 @@ for (i in 1:length(vorlagen_short)) {
     results <- normal_intro(results)
     
     #LENA-Classics (falls alle Gemeinden ausgezählt):
-    if (nrow(results_notavailable) == 0) {
+    #if (nrow(results_notavailable) == 0) {
       
       results <- lena_classics(results)
       
-    }  
+    #}  
     
     #Historischer Vergleich (falls vorhanden)
     
