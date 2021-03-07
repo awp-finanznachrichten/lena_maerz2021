@@ -9,7 +9,7 @@
 8,"Glarus","Glaris","Glarona",53.5,46.5,53.5,3,3,
 9,"Zug","Zoug","Zugo",0,0,50,11,0,"0/11"
 10,"Freiburg","Fribourg","Friburgo",58.6,41.4,100,128,102,"102/128"
-11,"Solothurn","Soleure","Soletta",55.9,44.1,100,107,92,"92/107"
+11,"Solothurn","Soleure","Soletta",55.8,44.2,100,107,93,"93/107"
 12,"Basel-Stadt","Bâle-Ville","Basilea Città",41.2,58.8,41.2,3,3,
 13,"Basel-Landschaft","Bâle-Campagne","Basilea Campagna",53.2,46.8,100,86,81,"81/86"
 14,"Schaffhausen","Schaffhouse","Sciaffusa",0,0,50,26,0,"0/26"
@@ -20,7 +20,7 @@
 19,"Aargau","Argovie","Argovia",53.6,46.4,53.6,210,210,
 20,"Thurgau","Thurgovie","Turgovia",54.8,45.2,100,80,76,"76/80"
 21,"Tessin","Tessin","Ticino",61.2,38.8,100,111,105,"105/111"
-22,"Waadt","Vaud","Vaud",54.3,45.7,100,308,244,"244/308"
+22,"Waadt","Vaud","Vaud",54,46,100,308,247,"247/308"
 23,"Wallis","Valais","Vallese",59.5,40.5,100,122,90,"90/122"
 24,"Neuenburg","Neuchâtel","Neuchâtel",0,0,50,27,0,"0/27"
 25,"Genf","Genève","Ginevra",0,0,50,45,0,"0/45"
