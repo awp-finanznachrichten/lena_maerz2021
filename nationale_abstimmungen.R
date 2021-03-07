@@ -241,7 +241,7 @@ for (i in 1:length(vorlagen_short)) {
                             round(100-results_national$jaStimmenInProzent,1)," %</b> non")
     
     undertitel_it <- paste0("I risultati di <b>",sum(results$Gebiet_Ausgezaehlt),"</b> dei <b>",nrow(results),
-                            "</b> communi sono noti. Stato: <b>",
+                            "</b> comuni sono noti. Stato: <b>",
                             round(results_national$jaStimmenInProzent,1)," %</b> sì, <b>",
                             round(100-results_national$jaStimmenInProzent,1)," %</b> no")
   
