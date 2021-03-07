@@ -4,7 +4,7 @@ setwd("C:/Users/simon/OneDrive/LENA_Project/lena_maerz2021")
 ###LENA alle 5 Sekunden laufen lassen
 repeat{
 
-Sys.sleep(5)
+Sys.sleep(60)
 
 ###Config: Bibliotheken laden, Pfade/Links definieren, bereits vorhandene Daten laden
 source("config.R",encoding = "UTF-8")
