@@ -228,7 +228,7 @@ for (i in 1:length(vorlagen_short)) {
   undertitel_fr <- "Aucun résultat n'est encore connu."
   undertitel_it <- "Nessun risultato è ancora noto."
   
-  if (sum(results$Gebiet_Ausgezaehlt) > 2165 ) {
+  if (sum(results$Gebiet_Ausgezaehlt) > 2164 ) {
     
     undertitel_de <- paste0("Es sind <b>",sum(results$Gebiet_Ausgezaehlt),"</b> von <b>",nrow(results),
                             "</b> Gemeinden ausgezählt. Stand: <b>",
