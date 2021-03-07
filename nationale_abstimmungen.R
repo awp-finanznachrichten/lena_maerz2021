@@ -9,7 +9,7 @@ for (i in 1:length(vorlagen_short)) {
   
   ###Resultate aus JSON auslesen für Gemeinden
   results <- get_results(json_data,i)
-  
+ 
 #Simulation Gemeinden
 #source("data_simulation_gemeinden.R")
   
@@ -228,7 +228,7 @@ for (i in 1:length(vorlagen_short)) {
   undertitel_fr <- "Aucun résultat n'est encore connu."
   undertitel_it <- "Nessun risultato è ancora noto."
   
-  if (sum(results$Gebiet_Ausgezaehlt) > 2164 ) {
+  if (sum(results$Gebiet_Ausgezaehlt) > 2165 ) {
     
     undertitel_de <- paste0("Es sind <b>",sum(results$Gebiet_Ausgezaehlt),"</b> von <b>",nrow(results),
                             "</b> Gemeinden ausgezählt. Stand: <b>",
