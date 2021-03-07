@@ -1,26 +1,26 @@
 "Kantons_Nr","Kanton_d","Kanton_f","Kanton_i","Ja_Stimmen_In_Prozent_Kanton","Nein_Stimmen_In_Prozent_Kanton","Kanton_color","Gemeinden_overall","Gemeinden_counted","Legende"
-1,"Zürich","Zurich","Zurigo",53.5,46.5,100,162,95,"95/162"
+1,"Zürich","Zurich","Zurigo",53.4,46.6,100,162,104,"104/162"
 2,"Bern","Berne","Berna",0,0,50,334,0,"0/334"
 3,"Luzern","Lucerne","Lucerna",50.5,49.5,50.5,80,80,
 4,"Uri","Uri","Uri",58.8,41.2,58.8,19,19,
 5,"Schwyz","Schwyz","Svitto",60.2,39.8,60.2,30,30,
-6,"Obwalden","Obwald","Obvaldo",56.4,43.6,100,7,6,"6/7"
+6,"Obwalden","Obwald","Obvaldo",56.2,43.8,56.2,7,7,
 7,"Nidwalden","Nidwald","Nidvaldo",56.1,43.9,56.1,11,11,
 8,"Glarus","Glaris","Glarona",53.5,46.5,53.5,3,3,
 9,"Zug","Zoug","Zugo",0,0,50,11,0,"0/11"
 10,"Freiburg","Fribourg","Friburgo",56.1,43.9,100,128,123,"123/128"
 11,"Solothurn","Soleure","Soletta",53.2,46.8,100,107,105,"105/107"
 12,"Basel-Stadt","Bâle-Ville","Basilea Città",41.2,58.8,41.2,3,3,
-13,"Basel-Landschaft","Bâle-Campagne","Basilea Campagna",53.2,46.8,100,86,81,"81/86"
+13,"Basel-Landschaft","Bâle-Campagne","Basilea Campagna",53.4,46.6,53.4,86,86,
 14,"Schaffhausen","Schaffhouse","Sciaffusa",52.2,47.8,52.2,26,26,
 15,"Appenzell Ausserrhoden","Appenzell Rhodes-Extérieures","Appenzello Esterno",49.1,50.9,49.1,20,20,
 16,"Appenzell Innerrhoden","Appenzell Rhodes-Intérieures","Appenzello Interno",0,0,50,6,0,"0/6"
-17,"St. Gallen","Saint-Gall","San Gallo",55.6,44.4,100,77,63,"63/77"
+17,"St. Gallen","Saint-Gall","San Gallo",53.1,46.9,53.1,77,77,
 18,"Graubünden","Grisons","Grigioni",49.6,50.4,49.6,101,101,
 19,"Aargau","Argovie","Argovia",53.6,46.4,53.6,210,210,
 20,"Thurgau","Thurgovie","Turgovia",53.9,46.1,53.9,80,80,
 21,"Tessin","Tessin","Ticino",60.5,39.5,60.5,111,111,
-22,"Waadt","Vaud","Vaud",53.6,46.4,100,308,266,"266/308"
+22,"Waadt","Vaud","Vaud",53.5,46.5,100,308,276,"276/308"
 23,"Wallis","Valais","Vallese",59.5,40.5,100,122,90,"90/122"
 24,"Neuenburg","Neuchâtel","Neuchâtel",0,0,50,27,0,"0/27"
 25,"Genf","Genève","Ginevra",0,0,50,45,0,"0/45"
