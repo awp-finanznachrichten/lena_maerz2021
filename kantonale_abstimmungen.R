@@ -1,5 +1,3 @@
-
-
 for (k in 1:length(kantonal_short) ) {
   
   cat(paste0("\nErmittle Daten für folgende Vorlage: ",kantonal_short[k],"\n"))
@@ -26,7 +24,6 @@ for (k in 1:length(kantonal_short) ) {
   #Wie viele Gemeinden sind ausgezählt?
   cat(paste0(sum(results$Gebiet_Ausgezaehlt)," Gemeinden sind ausgezählt.\n"))
   
-  View(results)
   #Neue Variablen
   results <- results %>%
     mutate(Ja_Nein = NA,
