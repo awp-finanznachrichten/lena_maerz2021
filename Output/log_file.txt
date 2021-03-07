@@ -269,3 +269,12 @@ Uri, Nidwalden, Glarus, Basel-Stadt, Graubünden, Aargau,
 
 2021-03-07 13:10:13 Indonesien
 Uri, Nidwalden, Glarus, Basel-Stadt, Graubünden, Aargau, 
+
+2021-03-07 13:12:11 Verhuellungsverbot
+Uri, Nidwalden, Glarus, Basel-Stadt, Graubünden, Aargau, 
+
+2021-03-07 13:12:34 E-ID-Gesetz
+Uri, Nidwalden, Glarus, Basel-Stadt, Graubünden, Aargau, 
+
+2021-03-07 13:12:56 Indonesien
+Uri, Nidwalden, Glarus, Basel-Stadt, Graubünden, Aargau, 
