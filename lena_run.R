@@ -19,8 +19,6 @@ source("functions_output.R", encoding = "UTF-8")
 #Anzahl, Name und Nummer der Vorlagen von JSON einlesen
 vorlagen <- get_vorlagen(json_data,"de")
 
-
-
 time_start <- Sys.time()
 
 ###Nationale Abstimmungen###
