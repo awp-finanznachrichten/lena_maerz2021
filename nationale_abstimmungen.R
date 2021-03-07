@@ -9,6 +9,8 @@ for (i in 1:length(vorlagen_short)) {
   
   ###Resultate aus JSON auslesen für Gemeinden
   results <- get_results(json_data,i)
+  
+
 
 #Simulation Gemeinden
 #source("data_simulation_gemeinden.R")
@@ -16,9 +18,9 @@ for (i in 1:length(vorlagen_short)) {
 
   #Emergency adapt
   #results$gebietAusgezaehlt[155] <- TRUE
-  #results$gebietAusgezaehlt[897] <- TRUE
-  #results$gebietAusgezaehlt[898] <- TRUE
-  #results$gebietAusgezaehlt[899] <- TRUE
+  results$gebietAusgezaehlt[897] <- TRUE
+  results$gebietAusgezaehlt[898] <- TRUE
+  results$gebietAusgezaehlt[899] <- TRUE
   
   #Daten anpassen Gemeinden
   results <- treat_gemeinden(results)
